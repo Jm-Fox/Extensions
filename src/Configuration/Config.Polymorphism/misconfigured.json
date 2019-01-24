@@ -1,0 +1,7 @@
+﻿{
+  "type": "equal",
+  "left": {
+    "type": "System.Int32",
+    "remarks": "Note that the expected type for this section is ExpressionBase. System.Int32 does not inherit from ExpressionBase."
+  }
+}

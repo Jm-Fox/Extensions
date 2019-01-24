@@ -1,0 +1,14 @@
+{
+  "type": "equal",
+  "left": {
+    "type": "eval",
+    "memberName": "Day"
+  },
+  "right": {
+    "type": "literal",
+    "value": {
+      "objectType": "System.Int32",
+      "value": "13"
+    }
+  }
+}

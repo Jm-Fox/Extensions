@@ -1,6 +1,8 @@
 // Copyright (c) .NET Foundation. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
+using Microsoft.Extensions.Configuration.Binder.Dynamic;
+
 namespace Microsoft.Extensions.Configuration
 {
     /// <summary>
@@ -13,5 +15,11 @@ namespace Microsoft.Extensions.Configuration
         /// If true, the binder will attempt to set all non read-only properties.
         /// </summary>
         public bool BindNonPublicProperties { get; set; }
+
+        /// <summary>
+        /// Used to override the type to be used for binding a given configuration section/value to a CLR type.
+        /// If null, the expected type will be used.
+        /// </summary>
+        public DynamicTypeStrategyResolver StrategyResolver { get; set; }
     }
 }

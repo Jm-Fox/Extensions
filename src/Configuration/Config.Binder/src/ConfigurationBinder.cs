@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 using Microsoft.Extensions.Configuration.Binder;
+using Microsoft.Extensions.Configuration.Binder.Dynamic;
 
 namespace Microsoft.Extensions.Configuration
 {
@@ -282,6 +283,20 @@ namespace Microsoft.Extensions.Configuration
 
         private static object BindInstance(Type type, object instance, IConfiguration config, BinderOptions options)
         {
+            // allow the expected type to be overridden
+            if (options.StrategyResolver != null)
+            {
+                DynamicTypeResolutionStrategy strategy = options.StrategyResolver(type, config);
+                if (!type.IsAssignableFrom(strategy.ActualType))
+                    throw new InvalidOperationException(Resources.FormatError_CannotAssignType(type, strategy.ActualType));
+                else
+                    type = strategy.ActualType;
+                if (!string.IsNullOrEmpty(strategy.KeyName))
+                {
+                    return BindInstance(type, instance, config.GetSection(strategy.KeyName), options);
+                }
+            }
+
             // if binding IConfigurationSection, break early
             if (type == typeof(IConfigurationSection))
             {

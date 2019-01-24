@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <!-- Can't seem to get this to stick, hence all the empty comments -->
+    <DocumentationFile />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Config.Binder\src\Microsoft.Extensions.Configuration.Binder.csproj" />
+    <ProjectReference Include="..\Config.Json\src\Microsoft.Extensions.Configuration.Json.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="misconfigured.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="OddNumbers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DayIs13.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

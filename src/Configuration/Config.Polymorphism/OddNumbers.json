@@ -1,0 +1,80 @@
+﻿{
+  "type": "and",
+  "conditions": [
+    {
+      "type": "equal",
+      "left": {
+        "type": "literal",
+        "value": {
+          "objectType": "System.Int32",
+          "value": "1"
+        }
+      },
+      "right": {
+        "type": "int64eval",
+        "op": "And",
+        "left": {
+          "type": "eval",
+          "memberName": "Day"
+        },
+        "right": {
+          "type": "literal",
+          "value": {
+            "objectType": "System.Int32",
+            "value": "1"
+          }
+        }
+      }
+    },
+    {
+      "type": "equal",
+      "left": {
+        "type": "literal",
+        "value": {
+          "objectType": "System.Int32",
+          "value": "1"
+        }
+      },
+      "right": {
+        "type": "int64eval",
+        "op": "And",
+        "left": {
+          "type": "eval",
+          "memberName": "Month"
+        },
+        "right": {
+          "type": "literal",
+          "value": {
+            "objectType": "System.Int32",
+            "value": "1"
+          }
+        }
+      }
+    },
+    {
+      "type": "equal",
+      "left": {
+        "type": "literal",
+        "value": {
+          "objectType": "System.Int32",
+          "value": "1"
+        }
+      },
+      "right": {
+        "type": "int64eval",
+        "op": "And",
+        "left": {
+          "type": "eval",
+          "memberName": "Year"
+        },
+        "right": {
+          "type": "literal",
+          "value": {
+            "objectType": "System.Int32",
+            "value": "1"
+          }
+        }
+      }
+    }
+  ]
+}

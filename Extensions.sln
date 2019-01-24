@@ -303,6 +303,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.JSInterop.JS", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mono.WebAssembly.Interop", "src\JSInterop\Mono.WebAssembly.Interop\src\Mono.WebAssembly.Interop.csproj", "{89B01C5B-42DF-4E99-847E-354B8C5FBA6F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolymorphicSample", "src\Configuration\Config.Polymorphism\PolymorphicSample.csproj", "{8A16BF32-6980-426F-A25E-47C8E24C6DF3}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		src\Shared\src\CommandLineUtils\Microsoft.Extensions.CommandLineUtils.Sources.projitems*{00947d4a-c20e-46e3-90c3-6cd6bc87ee72}*SharedItemsImports = 13
@@ -1804,6 +1806,18 @@ Global
 		{89B01C5B-42DF-4E99-847E-354B8C5FBA6F}.Release|x64.Build.0 = Release|Any CPU
 		{89B01C5B-42DF-4E99-847E-354B8C5FBA6F}.Release|x86.ActiveCfg = Release|Any CPU
 		{89B01C5B-42DF-4E99-847E-354B8C5FBA6F}.Release|x86.Build.0 = Release|Any CPU
+		{8A16BF32-6980-426F-A25E-47C8E24C6DF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A16BF32-6980-426F-A25E-47C8E24C6DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A16BF32-6980-426F-A25E-47C8E24C6DF3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8A16BF32-6980-426F-A25E-47C8E24C6DF3}.Debug|x64.Build.0 = Debug|Any CPU
+		{8A16BF32-6980-426F-A25E-47C8E24C6DF3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8A16BF32-6980-426F-A25E-47C8E24C6DF3}.Debug|x86.Build.0 = Debug|Any CPU
+		{8A16BF32-6980-426F-A25E-47C8E24C6DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A16BF32-6980-426F-A25E-47C8E24C6DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A16BF32-6980-426F-A25E-47C8E24C6DF3}.Release|x64.ActiveCfg = Release|Any CPU
+		{8A16BF32-6980-426F-A25E-47C8E24C6DF3}.Release|x64.Build.0 = Release|Any CPU
+		{8A16BF32-6980-426F-A25E-47C8E24C6DF3}.Release|x86.ActiveCfg = Release|Any CPU
+		{8A16BF32-6980-426F-A25E-47C8E24C6DF3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1940,6 +1954,7 @@ Global
 		{FD4896CE-E3FB-458E-8581-7552347C4260} = {6A293FDC-A13B-4137-87F9-C9225CF3542B}
 		{76258B76-8CDD-471A-9D43-0815B712D668} = {6A293FDC-A13B-4137-87F9-C9225CF3542B}
 		{89B01C5B-42DF-4E99-847E-354B8C5FBA6F} = {6A293FDC-A13B-4137-87F9-C9225CF3542B}
+		{8A16BF32-6980-426F-A25E-47C8E24C6DF3} = {D635A77C-C3AE-4F97-AAFF-5538F552AA51}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {814BFC88-0867-451F-AC8F-20FE107809B4}

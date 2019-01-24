@@ -96,5 +96,19 @@ namespace Microsoft.Extensions.Configuration.Binder
 
             return value;
         }
+
+        /// <summary>
+        /// Cannot override expected type '{0}' with actual type '{1}' because '{1}' is not assignable from '{0}'.
+        /// </summary>
+        internal static string Error_CannotAssignType
+        {
+            get => GetString("Error_UnsupportedMultidimensionalArray");
+        }
+
+        /// <summary>
+        /// Cannot override expected type '{0}' with actual type '{1}' because '{1}' is not assignable from '{0}'.
+        /// </summary>
+        internal static string FormatError_CannotAssignType(object p0, object p1)
+            => string.Format(CultureInfo.CurrentCulture, GetString("Error_CannotAssignType"), p0, p1);
     }
 }
